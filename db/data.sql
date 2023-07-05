@@ -1,5 +1,5 @@
 
-INSERT INTO `bodegas` (`id`, `nombre`, `id_responsable`, `estado`, `created_by`, `update_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
+INSERT INTO `bodegas` (`id`, `nombre`, `id_responsable`, `estado`, `create_by`, `update_by`, `create_at`, `update_at`, `delete_at`) VALUES
 (11, 'bodega0', 16, 1, 16, NULL, '2022-06-02 15:33:48', NULL, NULL),
 (12, 'bodega1', 18, 1, 18, NULL, '2022-06-02 15:33:48', NULL, NULL),
 (13, 'bodega2', 18, 1, 18, NULL, '2022-06-02 15:33:48', NULL, NULL),
@@ -31,7 +31,7 @@ INSERT INTO `bodegas` (`id`, `nombre`, `id_responsable`, `estado`, `created_by`,
 (49, 'Bodega Anderson Atuesta555', 11, 11, NULL, NULL, '2022-07-21 21:27:13', '2022-07-21 21:27:13', NULL),
 (50, 'A Bodega', 11, 1, NULL, NULL, '2023-05-25 01:02:57', '2023-05-25 01:02:57', NULL);
 
-INSERT INTO `historiales` (`id`, `cantidad`, `id_bodega_origen`, `id_bodega_destino`, `id_inventario`, `created_by`, `update_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
+INSERT INTO `historiales` (`id`, `cantidad`, `id_bodega_origen`, `id_bodega_destino`, `id_inventario`, `create_by`, `update_by`, `create_at`, `update_at`, `delete_at`) VALUES
 (18, 7, 12, 18, 18, 18, NULL, NULL, NULL, NULL),
 (20, 9, 11, 12, 18, 15, NULL, NULL, NULL, NULL),
 (21, 7, 29, 30, 36, NULL, NULL, '2022-06-03 03:18:19', '2022-06-03 03:18:19', NULL),
@@ -44,7 +44,7 @@ INSERT INTO `historiales` (`id`, `cantidad`, `id_bodega_origen`, `id_bodega_dest
 (28, 1, 12, 11, 67, NULL, NULL, '2022-07-11 22:17:10', '2022-07-11 22:17:10', NULL),
 (29, 200, 11, 12, 75, 11, NULL, '2022-07-21 21:24:15', '2022-07-21 21:24:15', NULL);
 
-INSERT INTO `inventarios` (`id`, `id_bodega`, `id_producto`, `cantidad`, `created_by`, `update_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
+INSERT INTO `inventarios` (`id`, `id_bodega`, `id_producto`, `cantidad`, `create_by`, `update_by`, `create_at`, `update_at`, `delete_at`) VALUES
 (12, 12, 18, 103, 11, NULL, NULL, '2023-05-26 01:35:52', NULL),
 (13, 19, 18, 220, 19, NULL, NULL, NULL, NULL),
 (14, 20, 13, 13, 14, NULL, NULL, NULL, NULL),
@@ -93,7 +93,7 @@ INSERT INTO `inventarios` (`id`, `id_bodega`, `id_producto`, `cantidad`, `create
 (76, 50, 60, 74, NULL, NULL, '2023-05-25 03:52:26', '2023-05-25 03:52:26', NULL),
 (77, 12, 12, 124, NULL, NULL, '2023-05-26 01:36:15', '2023-05-26 01:37:39', NULL);
 
-INSERT INTO `productos` (`id`, `nombre`, `descripcion`, `estado`, `created_by`, `update_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
+INSERT INTO `productos` (`id`, `nombre`, `descripcion`, `estado`, `create_by`, `update_by`, `create_at`, `update_at`, `delete_at`) VALUES
 (11, 'producto0', 'producto0', 1, 16, NULL, NULL, NULL, NULL),
 (12, 'producto1', 'producto1', 1, 14, NULL, NULL, NULL, NULL),
 (13, 'producto2', 'producto2', 1, 13, NULL, NULL, NULL, NULL),
@@ -142,7 +142,7 @@ INSERT INTO `productos` (`id`, `nombre`, `descripcion`, `estado`, `created_by`, 
 (59, 'Producto Anderson Atuesta', 'Esta es una prueba', 1, 11, NULL, '2022-07-21 20:49:42', '2022-07-21 20:49:42', NULL),
 (60, 'Pringles', 'papas fritas', 1, NULL, NULL, '2023-05-25 03:52:26', '2023-05-25 03:52:26', NULL);
 
-INSERT INTO `users` (`id`, `nombre`, `email`, `email_verified_at`, `estado`, `created_by`, `update_by`, `foto`, `password`, `created_at`, `updated_at`, `deleted_at`) VALUES
+INSERT INTO `users` (`id`, `nombre`, `email`, `email_verified_at`, `estado`, `create_by`, `update_by`, `foto`, `password`, `create_at`, `update_at`, `delete_at`) VALUES
 (11, 'juan0', 'juan 0@hotmail.com', NULL, 1, NULL, NULL, NULL, '12345', NULL, NULL, NULL),
 (12, 'juan1', 'juan 1@hotmail.com', NULL, 1, NULL, NULL, NULL, '12345', NULL, NULL, NULL),
 (13, 'juan2', 'juan 2@hotmail.com', NULL, 1, NULL, NULL, NULL, '12345', NULL, NULL, NULL),
