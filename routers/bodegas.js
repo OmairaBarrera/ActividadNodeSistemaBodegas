@@ -33,12 +33,15 @@ storageBodegas.post('/', (req, res) => {
         }
     */
     const {nombre,id_responsable,estado} = req.body;  
+    // Obtener los datos del cuerpo de la solicitud
     const sql = 'INSERT INTO bodegas (nombre, id_responsable, estado) VALUES (?, ?, ?)';
     const nuevaBodega = [nombre,id_responsable,estado];
     //Guardar la nueva bodega en la base de datos
     connection.query(sql,nuevaBodega, (error, result) => {
         if (error) {
             res.status(500).json({ error: 'Ocurrió un error en el servidor' });
+            console.log(error);
+            res.send(result);
         } else {
             res.status(201).json({ mensaje: 'Bodega creada exitosamente' , data : result });
         }
