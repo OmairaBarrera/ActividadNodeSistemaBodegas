@@ -17,6 +17,6 @@
   },
   "dependencies": {
     "mysql": "^2.18.1",
-    "mysql2": "^3.4.5"
+    "mysql2": "^3.5.0"
   }
 }
